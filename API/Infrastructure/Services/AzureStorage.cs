@@ -68,9 +68,10 @@ public class AzureStorage : IAzureStorage
                 {
                     // Set the maximum number of workers that 
                     // may be used in a parallel transfer.
+                    InitialTransferSize =  1024 * 1024,
                     MaximumConcurrency = 8,
                     // Set the maximum length of a transfer to 100MB.
-                    MaximumTransferSize = 100 * 1024 * 1024
+                    MaximumTransferSize = 2 * 1024 * 1024
                 }
             };
             // Open a stream for the file we want to upload
@@ -189,9 +190,10 @@ public class AzureStorage : IAzureStorage
                 {
                     // Set the maximum number of workers that 
                     // may be used in a parallel transfer.
+                    InitialTransferSize = 1024 * 1024,
                     MaximumConcurrency = 8,
                     // Set the maximum length of a transfer to 50MB.
-                    MaximumTransferSize = 50 * 1024 * 1024
+                    MaximumTransferSize = 4 * 1024 * 1024
                 }
             };
             // Open a stream for the file we want to upload
