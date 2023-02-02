@@ -71,7 +71,7 @@ public class AzureStorage : IAzureStorage
                     InitialTransferSize =  1024 * 1024,
                     MaximumConcurrency = 8,
                     // Set the maximum length of a transfer to 100MB.
-                    MaximumTransferSize = 2 * 1024 * 1024
+                    MaximumTransferSize = 4 * 1024 * 1024
                 }
             };
             // Open a stream for the file we want to upload
